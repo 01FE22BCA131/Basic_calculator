@@ -1,5 +1,5 @@
 
-class calculator{
+class calculator extends operation{
     
     /**
      * The function "add" takes two float operands and returns their sum.
@@ -45,17 +45,7 @@ class calculator{
     float div(float operand_1,float operand_2){
     return(operand_1 / operand_2);
     }
-   /**
-    * The function "square" takes a float operand and returns the square of that operand.
-    * 
-    * @param operand_1 The parameter "operand_1" is a float variable that represents the number that we
-    * want to square.
-    * @return the square of the operand_1 value.
-    */
-    float square(float operand_1){
-        return(operand_1*operand_1);
-        }
-
+  
 
 /**
  * The main function creates an instance of the calculator class, performs addition, subtraction,
@@ -64,17 +54,23 @@ class calculator{
 public static void main(String[] args){
     calculator calc=new calculator();
     float operand_1=10;
-    float operand_2=5;
+    float operand_2=10;
     float add_result = calc.add(operand_1,operand_2);
-    System.out.println("Result:"+add_result);
+    System.out.println("Addition Result is:"+add_result);
     float sub_result = calc.add(operand_1,operand_2);
-    System.out.println("Result:"+sub_result);
+    System.out.println("Substraction Result is:"+sub_result);
     float mul_result = calc.add(operand_1,operand_2);
-    System.out.println("Result:"+mul_result);
+    System.out.println("Multipication Result is:"+mul_result);
     float div_result = calc.add(operand_1,operand_2);
-    System.out.println("Result:"+div_result);
-    float square_result = calc.square(operand_1);
-    System.out.println("Result:"+square_result);
+    System.out.println("Division Result is:"+div_result);
+    
 
+    
+    float square_result = calc.square(operand_1);
+    System.out.println("Square Result is:"+square_result);
+    float cube_result = calc.cube(operand_1);
+    System.out.println(("Cube Result is:"+cube_result));
+    float mod_result = calc.mod(operand_1,operand_2);
+    System.out.println(("Mod Result is:"+mod_result));
 }
 }
