@@ -57,11 +57,11 @@ public static void main(String[] args){
     float operand_2=10;
     float add_result = calc.add(operand_1,operand_2);
     System.out.println("Addition Result is:"+add_result);
-    float sub_result = calc.add(operand_1,operand_2);
+    float sub_result = calc.sub(operand_1,operand_2);
     System.out.println("Substraction Result is:"+sub_result);
-    float mul_result = calc.add(operand_1,operand_2);
+    float mul_result = calc.mul(operand_1,operand_2);
     System.out.println("Multipication Result is:"+mul_result);
-    float div_result = calc.add(operand_1,operand_2);
+    float div_result = calc.div(operand_1,operand_2);
     System.out.println("Division Result is:"+div_result);
     
 
