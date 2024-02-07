@@ -67,11 +67,11 @@ public static void main(String[] args){
     float operand_2=5;
     float add_result = calc.add(operand_1,operand_2);
     System.out.println("Result:"+add_result);
-    float sub_result = calc.add(operand_1,operand_2);
+    float sub_result = calc.sub(operand_1,operand_2);
     System.out.println("Result:"+sub_result);
-    float mul_result = calc.add(operand_1,operand_2);
+    float mul_result = calc.mul(operand_1,operand_2);
     System.out.println("Result:"+mul_result);
-    float div_result = calc.add(operand_1,operand_2);
+    float div_result = calc.div(operand_1,operand_2);
     System.out.println("Result:"+div_result);
     float square_result = calc.square(operand_1);
     System.out.println("Result:"+square_result);
